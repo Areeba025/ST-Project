@@ -1,0 +1,178 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/* Defining CSS variables for colors, spacing, and other styles */
+:root {
+    --clr-primary: #7380ec;
+    --clr-danger: #ff7782;
+    --clr-success: #41f1b6;
+    --clr-white: #fff;
+    --clr-info-dark: #7d8da1;
+    --clr-info-light: #dce1eb;
+    --clr-dark: #363949;
+    --clr-warning: #ff4edc; 
+    --clr-light: rgba(132, 139, 200, 0.18);
+    --clr-primary-variant: #111e88;
+    --clr-dark-variant: #677483;
+    --clr-color-background: #f6f6f9;
+
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 0.8rem;
+    --border-radius-3: 1.2rem;
+
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+    --box-shadow: 0 2rem 3rem var(--clr-light);
+}
+
+/* Body styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 20px;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--clr-color-background);
+    color: var(--clr-dark);
+    line-height: 1.6;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    padding: 20px 0;
+    background: linear-gradient(to right, #0056b3, #7380ec); /* Updated background */
+    color: var(--clr-white);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+/* Container styling */
+.container {
+    width: 90%;
+    margin: 30px auto;
+    padding: 20px;
+    background: var(--clr-white);
+    border-radius: var(--border-radius-2);
+    box-shadow: var(--box-shadow);
+}
+
+/* Button styles */
+button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    color: var(--clr-white);
+    margin: 5px 10px;
+    border-radius: var(--border-radius-1);
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.btn-create {
+    background-color: var(--clr-primary);
+}
+
+.btn-edit {
+    background-color: #fd7e14;
+}
+
+.btn-delete {
+    background-color: var(--clr-danger);
+}
+
+.btn-save {
+    background-color: #0056b3;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--clr-white);
+    margin-top: 20px;
+    border-radius: var(--border-radius-2);
+    overflow: hidden;
+}
+
+table thead {
+    background: var(--clr-primary); /* Updated header background */
+    color: var(--clr-white);
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table tbody tr:nth-child(even) {
+    background: var(--clr-info-light);
+}
+
+table tbody tr:hover {
+    background: #f1f1f1;
+}
+
+table th {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+table td {
+    font-size: 14px;
+}
+
+table img {
+    border-radius: var(--border-radius-1);
+}
+
+/* Dropdown Styling */
+select.platform-dropdown {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius-1);
+    background-color: var(--clr-white);
+    font-size: 14px;
+    width: 100%;
+    cursor: pointer;
+}
+
+/* File Input Styling */
+input[type='file'] {
+    padding: 6px;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius-1);
+    font-size: 14px;
+}
+
+/* Spacing between buttons and table */
+.container button {
+    margin-bottom: 20px; /* Added space between buttons and table */
+}
+
+/* Dark Theme Variables */
+.dark-theme-variables {
+    --clr-color-background: #181a1e;
+    --clr-white: #202528;
+    --clr-light: rgba(0, 0, 0, 0.4);
+    --clr-dark: #edeffd;
+    --clr-dark-variant: #677483;
+    --box-shadow: 0 2rem 3rem var(--clr-light);
+}
+
+
+
+
+
+
+
+
+
+
+

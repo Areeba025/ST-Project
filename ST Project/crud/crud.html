@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD For Bugs</title>
+    <link rel="stylesheet" href="crud.css">
+</head>
+<body>
+    <header>
+        <h2>CRUD For Bugs</h2>
+    </header>
+    <div class="container">
+        <button class="btn-create" id="addBug">Create New</button>
+        <button class="btn-save" id="savePDF">Save as PDF</button>
+        <button class="btn-save" id="saveExcel">Save as Excel</button>
+        <table id="bugsTable">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Issue</th>
+                    <th>Description</th>
+                    <th>Platform</th>
+                    <th>Category</th>
+                    <th>Reported Date</th>
+                    <th>Fixed Date</th>
+                    <th>Images</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Default Row -->
+                <tr>
+                    <td>1</td>
+                    <td>It has two scroll bars</td>
+                    <td>Helmet violation</td>
+                    <td>Screen</td>
+                    <td>Dashboard</td>
+                    <td>10-December-2024</td>
+                    <td>10-December-2024</td>
+                    <td><img src="https://via.placeholder.com/50" alt="Bug Image"></td>
+                    <td>
+                        <button class="btn-edit" onclick="editBug(this)">Edit</button>
+                        <button class="btn-delete" onclick="deleteBug(this)">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="https://cdn.sheetjs.com/xlsx-latest/package/dist/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.28/jspdf.plugin.autotable.min.js"></script>
+
+    <script src="crud.js"></script>
+</body>
+</html>
+

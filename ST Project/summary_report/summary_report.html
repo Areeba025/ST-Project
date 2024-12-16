@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Module Summary</title>
+    <link rel="stylesheet" href="summary_report.css">
+</head>
+<body>
+
+    <h2>Report Module Summary</h2>
+
+    <!-- Filter Section -->
+    <div class="filters">
+        <label>Project:
+            <select id="filterProject">
+                <option value="all">All</option>
+                <option value="Project A">Project A</option>
+                <option value="Project B">Project B</option>
+                <option value="Project C">Project C</option>
+            </select>
+        </label>
+
+        <label>Platform:
+            <select id="filterPlatform">
+                <option value="all">All</option>
+                <option value="Web">Web</option>
+                <option value="Mobile">Mobile</option>
+            </select>
+        </label>
+
+        <label>Status:
+            <select id="filterStatus">
+                <option value="all">All</option>
+                <option value="Open">Open</option>
+                <option value="Fixed">Fixed</option>
+            </select>
+        </label>
+
+        <button onclick="applyFilters()">Apply Filters</button>
+        <button onclick="exportToPDF()">Export to PDF</button>
+        <button onclick="exportToExcel()">Export to Excel</button>
+    </div>
+
+    <!-- Report Table -->
+    <table id="reportTable">
+        <thead>
+            <tr>
+                <th>Project</th>
+                <th>Platform</th>
+                <th>Status</th>
+                <th>Comment</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Project A</td>
+                <td>Web</td>
+                <td>Open</td>
+                <td>Needs testing</td>
+            </tr>
+            <tr>
+                <td>Project B</td>
+                <td>Mobile</td>
+                <td>Fixed</td>
+                <td>Bug resolved</td>
+            </tr>
+            <tr>
+                <td>Project C</td>
+                <td>Web</td>
+                <td>Open</td>
+                <td>UI issues</td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.19/jspdf.plugin.autotable.min.js"></script>
+
+
+    <script src="summary_report.js"></script>
+    
+</html>

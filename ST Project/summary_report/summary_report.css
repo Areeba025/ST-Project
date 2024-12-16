@@ -1,0 +1,95 @@
+body {
+    font-family: 'Arial', sans-serif; /* Use custom font family */
+    text-align: center;
+    background-color: #f4f4f9; /* Light background color */
+    margin: 40px; /* Increased margin around the body */
+    color: #111e88; /* Default text color matching your theme */
+}
+
+h2 {
+    font-weight: bold;
+    color: #7380ec; /* Use theme color for the title */
+    font-size: 32px; /* Increased font size for better visibility */
+    margin-bottom: 30px; /* Added margin at the bottom */
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px; /* Added space below the filters section */
+    gap: 25px; /* Increased gap between the filters */
+}
+
+.filters label {
+    font-weight: bold;
+    font-size: 16px;
+    color: #4c63af; /* Label color matching theme */
+    margin-right: 10px; /* Added space to the right of labels */
+}
+
+.filters select {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    color: #111e88; /* Select text color */
+    background-color: #fff;
+    width: 150px; /* Set width for better consistency */
+}
+
+button {
+    padding: 12px 25px;
+    margin: 10px;
+    background-color: #0056b3; /* Button background color */
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+button:hover {
+    background-color: #4c63af; /* Button hover color */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+table {
+    width: 90%;
+    margin: 40px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px; /* Increased padding for more space around content */
+    text-align: center;
+    border: 1px solid #ddd; /* Border for table cells */
+}
+
+th {
+    background-color: #7380ec; /* Table header background color */
+    color: white; /* Header text color */
+    font-size: 16px;
+}
+
+td {
+    font-size: 14px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Even rows background color */
+}
+
+tr:hover {
+    background-color: #e9f7fa; /* Hover effect for rows */
+}
+
+button:focus {
+    outline: none;
+}
+
+button:active {
+    background-color: #0288d1; /* Active button color */
+}
+
